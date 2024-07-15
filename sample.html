@@ -26,18 +26,21 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-box
-        material="color: red"
+    <a-assets>
+      <a-asset-items id="object" src="object.gltf"></a-asset-items>
+    </a-assets>
+      <a-entity
         gps-entity-place="latitude: 35.7108112; longitude: 139.8235285;"
-        scale="15 15 15"
-      ></a-box>
+        gltf-model = "#object"
+        scale="5 5 5"
+      ></a-ent>
       <a-text
         id="text"
         value=""
         look-at="[gps-camera]"
         scale="30 30 30"
         position="0 55 0"
-        gps-entity-place="latitude: 35.7108112; longitude: 35.7108112;"
+        gps-entity-place="latitude: 35.7108112; longitude: 139.8235285;"
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
