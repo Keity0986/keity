@@ -35,15 +35,9 @@
         gps-entity-place="latitude: 35.6270993; longitude: 140.1045904;"
         gltf-model="#object"
         scale="300 300 300"
-        position="0 5 0"
+        rotation="0 0 0"
         animation-mixer
-        <a-animation
-          attribute="rotation"
-          to="0 360 0"
-          dur="5000"
-          repeat="indefinite"
-          easing="linear"
-        ></a-animation>
+        animation="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true"
       ></a-entity>
       <a-text
         id="text"
